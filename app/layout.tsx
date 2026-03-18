@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <body className={`${poppins.className}`}>
-        <main className="container min-h-screen mx-auto px-4 py-8">
+        <main className="">
           {children}
         </main>
       </body>
