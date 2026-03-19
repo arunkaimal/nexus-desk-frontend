@@ -1,25 +1,5 @@
 import { create } from "zustand";
-
-type Message = {
-  id: string;
-  text: string;
-  sender: "me" | "other";
-};
-
-type Conversation = {
-  id: string;
-  name: string;
-  lastMessage: string;
-};
-
-type ChatState = {
-  conversations: Conversation[];
-  activeConversationId: string | null;
-  messages: Record<string, Message[]>;
-
-  setActiveConversation: (id: string) => void;
-  sendMessage: (text: string) => void;
-};
+import { ChatState,Message } from "@/types/chat.types";
 
 export const useChatStore = create<ChatState>((set, get) => ({
   //Dummy Datas
