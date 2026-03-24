@@ -2,14 +2,13 @@
 
 import { Search, Bell } from "lucide-react";
 import { Input } from "@/components/ui/input";
-
 export default function Header() {
   return (
     <header className="h-16 border-b border-purple-800/30 bg-black flex items-center justify-between px-6">
       {/* Left - Title */}
       <div>
         <h2 className="text-lg font-semibold text-white">Dashboard</h2>
-        <p className="text-xs text-gray-400">Welcome back 👋</p>
+        <p className="text-xs text-gray-400">Welcome back Login User</p>
       </div>
 
       {/* Center - Search */}
