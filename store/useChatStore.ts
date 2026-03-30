@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { ChatState,Message } from "@/types/chat.types";
+import { ChatState, Message } from "@/types/chat.types";
 
 export const useChatStore = create<ChatState>((set, get) => ({
   //Dummy Datas
@@ -10,7 +10,7 @@ export const useChatStore = create<ChatState>((set, get) => ({
     { id: "3", name: "Sidharth", lastMessage: "Podaaa" },
   ],
 
-  activeConversationId: "1",
+  activeConversationId: null,
 
   messages: {
     "1": [

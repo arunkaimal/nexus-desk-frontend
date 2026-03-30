@@ -31,6 +31,7 @@ export default function ChatWindow() {
         </div>
       </div>
       {/* Messages */}
+      
       <MessageList>
         {currentMessages.map((msg) => (
           <MessageBubble
